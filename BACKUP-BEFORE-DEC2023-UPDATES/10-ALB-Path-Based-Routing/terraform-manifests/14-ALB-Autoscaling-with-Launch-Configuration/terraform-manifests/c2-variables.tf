@@ -4,7 +4,7 @@
 variable "aws_region" {
   description = "Region in which AWS Resources to be created"
   type = string
-  default = "us-east-1"  
+  default = "eu-east-1"  
 }
 
 # Environment Variable
@@ -37,7 +37,7 @@ variable "vpc_cidr_block" {
 variable "vpc_availability_zones" {
   description = "VPC Availability Zones"
   type = list(string)
-  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  default = ["eu-east-1a", "eu-east-1b", "eu-east-1c"]
 }
 
 variable "vpc_public_subnets" {
