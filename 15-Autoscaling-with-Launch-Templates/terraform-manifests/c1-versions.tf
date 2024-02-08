@@ -7,20 +7,20 @@ terraform {
       version = ">= 5.0"
     }
     null = {
-      source = "hashicorp/null"
+      source  = "hashicorp/null"
       version = "~> 3.0"
-    }    
+    }
     random = {
-      source = "hashicorp/random"
+      source  = "hashicorp/random"
       version = "~> 3.0"
-    }            
+    }
   }
 }
 
 # Provider Block
 provider "aws" {
   region  = var.aws_region
-  profile = "default"
+  profile = "personal"
 }
 /*
 Note-1:  AWS Credentials Profile (profile = "default") configured on your local desktop terminal  
